@@ -28,7 +28,7 @@ import Layout from "../layouts/Layout.astro";
 					<!-- <span style="font-size: 45px"><Fa icon={faFileDownload} /></span> -->
 					<div style="display: flex; gap: 5px; align-items: end;">
 						<h3 style="text-decoration: underline;">Download File</h3>
-						<p>(AngelicAgrippaRegular.otf)</p>
+						<p class="filename">(AngelicAgrippaRegular.otf)</p>
 					</div>
 				</a>
 			</section>
@@ -42,6 +42,7 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style lang="scss">
+	@use "include-media" as im;
 
 	.container {
 		flex-wrap: wrap;
@@ -51,5 +52,11 @@ import Layout from "../layouts/Layout.astro";
 
 	section {
 		margin-bottom: 20px;
+	}
+
+	@include im.media("<=400px") {
+		.filename {
+			font-size: 10px;
+		}
 	}
 </style>
