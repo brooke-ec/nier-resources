@@ -13,6 +13,7 @@
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "astro": "^5.16.0",
     "greset": "^2.0.0",
+    "include-media": "^2.0.0",
     "sass": "^1.94.2",
     "svelte": "^5.43.14",
     "svelte-fa": "^4.0.4",

@@ -16,15 +16,16 @@
 <style lang="scss">
 	@font-face {
 		font-family: "AngelicAgrippa";
-		src: url("/AngelicAgrippaRegular.otf") format("opentype");
+		src: url("AngelicAgrippaRegular.otf") format("opentype");
 	}
 
 	.container {
 		line-height: 45px;
 		font-size: 20px;
 		position: relative;
-		border: 1px solid black;
+		border: 1px solid white;
 		border-radius: 5px;
+		padding: 5px 10px;
 	}
 
 	.overlay {
@@ -36,6 +37,7 @@
 	}
 
 	textarea {
+		color: white;
 		width: 100%;
 		margin-top: -12px;
 		resize: none;

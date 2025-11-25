@@ -1,5 +1,6 @@
 ---
 import "greset";
+import "../style.scss"
 
 const { title } = Astro.props;
 interface Props {
@@ -12,7 +13,6 @@ interface Props {
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title ? title + " - " : ""} NieR Resources</title>
 	</head>
@@ -22,9 +22,23 @@ interface Props {
 </html>
 
 <style lang="scss">
-	html,
+	@use "include-media" as im;
+
 	body {
+		background-image: url('/footer.webp');
+		overflow-x: hidden;
+		background-size: contain;
+		background-position: 0% bottom;
+		background-repeat: no-repeat;
+		background-color: black;
+		color: white;
 		margin: 10px 50px;
 		height: 100%;
+
+
+		@include im.media("<=tablet") {
+			margin: 10px 10px;
+			background-size: 200%;
+		}
 	}
 </style>

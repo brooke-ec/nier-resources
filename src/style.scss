@@ -1,0 +1,29 @@
+a:not(.chalk) {
+    color: #9d8eff;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+a.chalk {
+    display: inline-block;
+    position: relative;
+    color: white;
+    max-height: fit-content;
+    padding: 25px 10px;
+
+    &:hover:before {
+        z-index: -1;
+        content: "";
+        width: 100vw;
+        margin-left: -20px;
+        position: absolute;
+        background-image: url("/chalk.webp");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 center;
+        inset: 1px;
+    }
+}

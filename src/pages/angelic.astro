@@ -1,8 +1,6 @@
 ---
-import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import FontPreview from '../components/FontPreview.svelte';
 import Layout from "../layouts/Layout.astro";
-import Fa from 'svelte-fa'
 ---
 
 <Layout title="Agrippa's Angelic">
@@ -13,27 +11,27 @@ import Fa from 'svelte-fa'
 			</section>
 			<section>
 				<p>
-					A mirror of <a href="https://x.com/ThreeEyedGemini">@ThreeEyedGemini</a>'s Agrippa's Angelic font as used in the <em>NieR</em> and <em>Drakengard</em> games.
+					A mirror of <a href="https://x.com/ThreeEyedGemini" target="_blank">@ThreeEyedGemini</a>'s Agrippa's Angelic font as used in the <em>NieR</em> and <em>Drakengard</em> games.
 				</p>
 				<p>
 					The original upload keeps expiring, so a permenant mirror can be found below.
 				</p>
 			</section>
-			<section>
+			<section style="width: min(100%, 700px);">
 				<h2>Font Preview</h2>
 				<FontPreview client:load />
 			</section>
 			<section>
-				<a class="download" href="AngelicAgrippaRegular.otp" download>
-					<span style="font-size: 45px"><Fa icon={faFileDownload} /></span>
-					<div>
-						<h3>Download File</h3>
-						<p>AngelicAgrippaRegular.otf</p>
+				<a class="chalk" href="AngelicAgrippaRegular.otp" download>
+					<!-- <span style="font-size: 45px"><Fa icon={faFileDownload} /></span> -->
+					<div style="display: flex; gap: 5px; align-items: end;">
+						<h3 style="text-decoration: underline;">Download File</h3>
+						<p>(AngelicAgrippaRegular.otf)</p>
 					</div>
 				</a>
 			</section>
 		</div>
-		<div style="width: 20vw">
+		<div style="width: 20vw; min-width: 300px;">
 			<div class="embed">
 			<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;ve made a font of Agrippa&#39;s Angelic script as it&#39;s used in DOD and NieR for word processors. I uploaded this previously twice but there were issues with it so here it is again. Definitely 100% certainly (probably) has nothing wrong with it this time!<a href="https://t.co/d3lDTra3kh">https://t.co/d3lDTra3kh</a> <a href="https://t.co/agwcAlPXRA">pic.twitter.com/agwcAlPXRA</a></p>&mdash; I AM CAIM (@ThreeEyedGemini) <a href="https://twitter.com/ThreeEyedGemini/status/1661817504757325829?ref_src=twsrc%5Etfw">May 25, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
@@ -42,6 +40,7 @@ import Fa from 'svelte-fa'
 </Layout>
 
 <style lang="scss">
+
 	.container {
 		flex-wrap: wrap;
 		display: flex;
@@ -50,19 +49,5 @@ import Fa from 'svelte-fa'
 
 	section {
 		margin-bottom: 20px;
-	}
-
-	.download {
-		border: 5px dashed black;
-		border-radius: 10px;
-		height: fit-content;
-		padding: 10px;
-		margin-top: 10px;
-		width: fit-content;
-		
-		align-items: center;
-		text-align: left;
-		display: flex;
-		gap: 10px;
 	}
 </style>
