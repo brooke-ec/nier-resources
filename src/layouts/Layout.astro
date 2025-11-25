@@ -32,13 +32,16 @@ interface Props {
 		background-repeat: no-repeat;
 		background-color: black;
 		color: white;
-		margin: 10px 50px;
+		margin: 50px 50px;
 		height: 100%;
 
+		@include im.media("<=1200px") {
+			background-size: 200%;
+		}
 
 		@include im.media("<=tablet") {
 			margin: 10px 10px;
-			background-size: 200%;
+			background-size: 300%;
 		}
 	}
 </style>
