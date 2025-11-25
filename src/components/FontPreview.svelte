@@ -31,12 +31,13 @@
 	.overlay {
 		position: absolute;
 		margin-top: 13px;
-		margin-left: 2px;
+		padding-left: 2px;
 		white-space: pre-wrap;
 		font-family: "AngelicAgrippa";
 	}
 
 	textarea {
+		padding: 0;
 		color: white;
 		width: 100%;
 		margin-top: -12px;
@@ -45,6 +46,5 @@
 		background: transparent;
 		line-height: inherit;
 		outline: none;
-		inset: 1;
 	}
 </style>
