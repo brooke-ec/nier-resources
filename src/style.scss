@@ -13,6 +13,7 @@ a.chalk {
     color: white;
     max-height: fit-content;
     padding: 10px 10px;
+    width: fit-content;
 
     &:hover:before {
         z-index: -1;
