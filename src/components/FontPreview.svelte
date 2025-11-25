@@ -16,7 +16,7 @@
 <style lang="scss">
 	@font-face {
 		font-family: "AngelicAgrippa";
-		src: url("AngelicAgrippaRegular.otf") format("opentype");
+		src: url("/AngelicAgrippaRegular.otf") format("opentype");
 	}
 
 	.container {
